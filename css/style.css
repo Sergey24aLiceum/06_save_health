@@ -4,7 +4,7 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: #000000;
-    background: #ffffff url("img/bg.jpg") no-repeat 50% 0;
+    background: #088a63 url("img/bg.jpg") no-repeat 50% 0;
   }
   
   h1 {
@@ -84,9 +84,34 @@ body {
     list-style: none;
   }
   
-  .site-footer {
-    display: flex;
-    justify-content: space-between;
-    color: #999999;
+  .wishes{
+    margin-bottom: 30px;
+    text-align: center;
   }
-  
+  #btn_health_wishes{
+    background: #ff5a26;
+    color: #ffc5b3;
+    border: 5px solid #ffc5b3;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 36px;
+    cursor: pointer;
+  }
+
+#p-health-wishes{
+  height: 150px;
+  font-size: 28px;
+  line_height: 40px;
+  color: #ff5a26;
+  text-align: justify;
+}
+  .site-footer p {
+   border: 1px solid #ff5a26;
+   padding: 10px 20px;
+   border-radius: 10px 0px;
+  background-color: #ffc5b3;
+cursor: pointer;
+}
+ .site-footer p:last-child {
+  cursor: auto;
+ }
