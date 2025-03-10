@@ -10,8 +10,8 @@ const arrayOfhealthWishers = [
     "Avoid unhealthy habits – Limit alcohol, smoking, or junk food while recovering.",
     "Stay patient – Healing takes time, so be kind to yourself during the process.",
 ];
-let countOfpells = 5
-document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfpells
+let countOfpills = 5
+document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfpills
 
 );
 document.getElementById("btn_health_wishes").addEventListener("click", () => {
@@ -30,8 +30,8 @@ document.getElementById("btn_health_wishes").style.display = "none";
 });
 
 document.getElementById("btn_health_wishes").addEventListener("click", () => {
-  countOfpells = 5;
-  console.log(countOfpells);
-  document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfpells);
+  countOfpills = 5;
+  console.log(countOfpills);
+  document.getElementById("count-of-tablets").innerText = "💊".repeat(countOfpills);
     document.getElementById("btn_health_wishes").style.display = "inline-block";
 })
