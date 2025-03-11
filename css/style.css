@@ -64,21 +64,6 @@ body {
     background-position: center top;
   }
   
-  .feature-kitten {
-    padding-top: 60px;
-    background-image: url("img/bottle.svg");
-  }
-  
-  .feature-cat {
-    padding-top: 60px;
-    background-image: url("img/cat.svg");
-  }
-  
-  .feature-train {
-    padding-top: 60px;
-    background-image: url("img/whistle.svg");
-  }
-  
   .skills-list {
     padding: 0;
     list-style: none;
@@ -115,3 +100,22 @@ cursor: pointer;
  .site-footer p:last-child {
   cursor: auto;
  }
+ /*Галерея*/
+
+.gallery {
+  display: flex;
+  width: 100%;
+  flex-wrap: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ #main-image {
+  width: 300px;
+ }
+
+#left-arrow, #right-arrow {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
