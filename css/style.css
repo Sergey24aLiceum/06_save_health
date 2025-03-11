@@ -112,6 +112,7 @@ cursor: pointer;
 
  #main-image {
   width: 300px;
+  height: 150px;
  }
 
 #left-arrow, #right-arrow {
