@@ -10,6 +10,13 @@ const arrayOfhealthWishers = [
   "Avoid unhealthy habits – Limit alcohol, smoking, or junk food while recovering.",
   "Stay patient – Healing takes time, so be kind to yourself during the process.",
 ];
+
+const arrayOfImages = [
+"1.jpg",
+"2.jpg",
+"3.jpg",
+];
+
 let countOfpills = 5;
 document.getElementById("count-of-tablets").innerText = "💊".repeat(
   countOfpills
@@ -41,22 +48,24 @@ document.getElementById("btn-byu-tablets").addEventListener("click", () => {
 
 let galleryImage = 1
 
-document.getElementById("main-image").setAttribute("src", `images/gallery/${galleryImage}.jpg`);
+    document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+      
+      document.getElementById("right-arrow").addEventListener('click', ()=>{
+        galleryImage++
+        console.log(galleryImage)
+      
+        if(galleryImage == 4)
+           {galleryImage = 1}
 
-document.getElementById("right-arrow").addEventListener("click", () => {
-  galleryImage++
-  console.log(galleryImage)
-  
-  if (galleryImage = 4) galleryImage = 1
+        document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+      })
 
-  document.getElementById("main-image").setAttribute("src", `images/gallery/${galleryImage}.jpg`);
-})
+      document.getElementById("left-arrow").addEventListener('click', ()=>{
+        galleryImage++
+        console.log(galleryImage)
+      
+        if(galleryImage == 4)
+           {galleryImage = 1}
 
-document.getElementById("left-image").addEventListener("click", () => {
-  galleryImage++
-  console.log(galleryImage)
-  
-  if (galleryImage == 4) galleryImage = 1
-
-  document.getElementById("main-image").setAttribute("src", `images/gallery/${galleryImage}.jpg`);
-})
+        document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+      })
