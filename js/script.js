@@ -48,7 +48,7 @@ document.getElementById("btn-byu-tablets").addEventListener("click", () => {
 
 let galleryImage = 1
 
-    document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+    document.getElementById("main-image").setAttribute("src",`img/gallery/${arrayOfImages[galleryImage-1]}`)
       
       document.getElementById("right-arrow").addEventListener('click', ()=>{
         galleryImage++
@@ -57,7 +57,7 @@ let galleryImage = 1
         if(galleryImage == 4)
            {galleryImage = 1}
 
-        document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+        document.getElementById("main-image").setAttribute("src",`img/gallery/${arrayOfImages[galleryImage-1]}`)
       })
 
       document.getElementById("left-arrow").addEventListener('click', ()=>{
@@ -67,5 +67,5 @@ let galleryImage = 1
         if(galleryImage == 4)
            {galleryImage = 1}
 
-        document.getElementById("main-image").setAttribute("src",`img/gallery/${galleryImage}.jpg`)
+        document.getElementById("main-image").setAttribute("src",`img/gallery/${arrayOfImages[galleryImage-1]}`)
       })
