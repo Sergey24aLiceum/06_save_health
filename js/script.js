@@ -69,3 +69,68 @@ let galleryImage = 1
 
         document.getElementById("main-image").setAttribute("src",`img/gallery/${arrayOfImages[galleryImage-1]}`)
       })
+
+const arrayOfObjects  = [
+        {
+          id: 1,
+          title: "Асвіт",
+          photo: "",
+          description: "",
+          rating: "4",
+          typ: "",
+        },
+        {
+          id: 2,
+          title: "Вітамін С",
+          photo: "",
+          description: "",
+          rating: "3",
+          typ: "",
+        },
+        {
+          id: 3,
+          title: "Вітамін D",
+          photo: "",
+          description: "",
+          rating: "5",
+          typ: "",
+        },
+        {
+          id: 4,
+          title: "Вітамін B3",
+          photo: "",
+          description: "",
+          rating: "5",
+          typ: "",
+        },
+        {
+          id: 5,
+          title: "Омега-3",
+          photo: "",
+          description: "",
+          rating: "3",
+          typ: "",
+        },
+        {
+          id: 6,
+          title: "Magnaum-B6",
+          photo: "",
+          description: "",
+          rating: "3",
+          typ: "",
+        },
+      ]
+
+console.log(arrayOfObjects)
+
+
+
+arrayOfObjects.forEach((item) => {
+  console.log(item)
+
+let divVitamin = document.createElement("div")
+divVitamin.innerText = item.title
+divVitamin.classList.add("vitamin")
+
+  document.getElementById("p-vitamins").appendChild(divVitamin)
+})

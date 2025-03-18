@@ -136,3 +136,22 @@ cursor: pointer;
 #left-arrow:active, #right-arrow:active {
   box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.6);
 }
+
+/* Вітаміни */
+
+#p-vitamins {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.vitamin {
+border: 1px solid #000000;
+margin: 10px;
+padding: 10px;
+border-radius: 5px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+width: 150px;
+height: 400px;
+}
