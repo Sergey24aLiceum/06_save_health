@@ -4,7 +4,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  background: #088a63 url("img/bg.jpg") no-repeat 50% 0;
+  background: #003021 url("../img/bg.jpg") repeat 100% 0;
 }
 
 h1 {
@@ -41,7 +41,7 @@ h2 {
 }
 
 .container {
-  width: 480px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -86,7 +86,7 @@ h2 {
 #p-health-wishes {
   height: 150px;
   font-size: 28px;
-  line_height: 40px;
+  line-height: 40px;
   color: #ff5a26;
   text-align: justify;
 }
@@ -155,16 +155,24 @@ h2 {
   padding: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  width: 150px;
+  width: 300px;
   min-height: 300px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+.vitamin p {
+  color: #00000033;
+  text-align: justify;
+  }
 .vitamin h3 {
   font-size: 24px;
 }
 .vitamin img {
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
 }
 .vitamin p {
   text-align: justify;
@@ -173,14 +181,23 @@ h2 {
 }
 .vitamin p:last-child {
   width: 90%;
-  border-top: 1px solid #999999;
-  background-color: #cccccc;
+  border-top: 1px solid #cccccc;
+  background-color: #ffffff;
   font-size: 14px;
   text-align: center;
   border-bottom: 1px solid #999999;
 }
-.vitamin span:first-child {
-  text-align: right;
+
+.vitamin p:first-child {
+  align-items: flex-end;
   font-size: 10px;
   color: #999999;
+}
+.vitamin div {
+  margin-top: auto;
+  width: 80%;
+}
+
+.vitamin div {
+  text-align: center;
 }
