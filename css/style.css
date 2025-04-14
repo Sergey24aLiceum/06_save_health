@@ -102,102 +102,153 @@ h2 {
 }
 /*Галерея*/
 
-.gallery {
-  display: flex;
+.gallery{
   width: 100%;
-  flex-wrap: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-#main-image {
-  width: 300px;
-  height: 150px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-
-#left-arrow,
-#right-arrow {
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  transition: 0.3s;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-#left-arrow:hover,
-#right-arrow:hover {
-  box-shadow: 7px 7px 20px rgba(0, 255, 13, 0.5);
-}
-#left-arrow:active,
-#right-arrow:active {
-  box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.6);
+#main-image{
+  width: 300px;
+  height: 200px;
 }
 
-/* Вітаміни */
+#main-image{
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.5);
+}
 
+#left-arrow, #right-arrow{
+  background-color: #09b317bd;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease;
+  border-radius: 50%;
+}
+
+#left-arrow:hover, #right-arrow:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#left-arrow:active, #right-arrow:active {
+box-shadow: 5px 5px 10px #09b317bd;
+}
+
+.wishes{
+  margin-top: 30px;
+  text-align: center;
+}
+
+button{
+  background: #09b317bd;
+  color: black;
+  border: 5px solid;
+  border-radius: 100px;
+  height: 50px;
+  width: 500px;
+  cursor: pointer;
+}
+
+#p-love-wishes {
+  font-size: 150px;
+  line-height: 28px;
+  line-height: 40px;
+  color: rgba(0, 8, 255, 0.641);
+  text-align: justify;
+}
+
+
+
+
+/*Блок з купівлею та відбраженням */
+
+.site-footer p {
+  border:1px solid #09b317bd  ;
+  padding: 10px 20px;
+  border-radius: 10px 8px;
+  background-color: #09b317bd;
+  cursor: pointer;
+}
+
+/**/
 #p-vitamins {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .vitamin {
-  border: 1px solid #000000;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  width: 300px;
-  min-height: 300px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-.vitamin p {
-  color: #00000033;
-  text-align: justify;
-  }
-.vitamin h3 {
-  font-size: 24px;
-}
-.vitamin img {
-  width: 64px;
-  height: 64px;
-}
-.vitamin p {
-  text-align: justify;
-  font-size: 18px;
-  color: #000000;
-}
-.vitamin p:last-child {
-  width: 90%;
-  border-top: 1px solid #cccccc;
-  background-color: #ffffff;
-  font-size: 14px;
-  text-align: center;
-  border-bottom: 1px solid #999999;
+  border:1px solid hsl(0, 0%, 50%);
+   margin: 10px;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: #999999 5px 5px 10px;
+   width: 350px;
+   min-height: 300px;
+   text-align: center;
 }
 
-.vitamin p:first-child {
-  align-items: flex-end;
-  font-size: 10px;
-  color: #999999;
+/*hover*/
+.vitamin:hover p:first-child{
+  color: #09b317bd;
 }
-.vitamin div {
+
+.vitamin:hover h3{
+  color: #09b317bd;
+}
+
+.vitamin:hover .img_container img{
+  width: auto;
+  height: auto;
+  transform: scale(1.1);
+  transform-origin: center;
+  transform: all is ease ;
+  filter: drop-shadow(0px 0px 10px hsl(0, 1%, 50%));
+}
+
+/*all*/
+.vitamin p{
+  color: black;
+  text-align: center;
+}
+
+.vitamin h3{
+  font-size: 24px;
+}
+
+.vitamin img{
+  width: 50px;
+  height: 50px;
+}
+
+.vitamin div>p:first-child{
+  text-align: center;
+}
+
+.vitamin div>img{
+  width: 100%;
+  height: auto;
+}
+
+.vitamin div{
   margin-top: auto;
   width: 80%;
 }
 
-.vitamin div {
+
+.vitamin p:last-child{
   text-align: center;
+  width: 100%;
+  border-top: 1px solid#999999;
+  border-bottom: 1px solid #999999;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #cccccc;
+  font-size: 14px;
 }
